@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Scroll_Views___The_Walking_Dead" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Bq2-hR-Z2f">
+                                <rect key="frame" x="164" y="35" width="271" height="145"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="271" id="15x-nB-bQs"/>
+                                    <constraint firstAttribute="height" constant="145" id="D6f-l6-0RY"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shelf" translatesAutoresizingMaskIntoConstraints="NO" id="OIr-Em-ij3">
+                                <rect key="frame" x="0.0" y="545" width="600" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="fsB-V5-gGN"/>
+                                    <constraint firstAttribute="height" constant="55" id="sWV-CP-ece"/>
+                                </constraints>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G5H-nC-IQJ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="p7W-wv-FSR">
+                                        <rect key="frame" x="201" y="292" width="198" height="321"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OIr-Em-ij3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Bu2-7Y-LyK"/>
+                            <constraint firstItem="G5H-nC-IQJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HBi-tt-WWQ"/>
+                            <constraint firstAttribute="trailing" secondItem="OIr-Em-ij3" secondAttribute="trailing" id="IS0-83-lua"/>
+                            <constraint firstAttribute="trailing" secondItem="G5H-nC-IQJ" secondAttribute="trailing" id="Tpu-bh-8e4"/>
+                            <constraint firstItem="Bq2-hR-Z2f" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="U86-PI-2Gm"/>
+                            <constraint firstItem="G5H-nC-IQJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bsu-YY-nCx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="G5H-nC-IQJ" secondAttribute="bottom" id="fHv-j7-Fqz"/>
+                            <constraint firstItem="Bq2-hR-Z2f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oTR-NQ-k8O"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OIr-Em-ij3" secondAttribute="bottom" id="wPL-jP-bRd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="G5H-nC-IQJ" id="OKt-on-j6N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="305"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="2" width="368" height="610"/>
+        <image name="logo" width="732" height="340"/>
+        <image name="shelf" width="865" height="114"/>
+    </resources>
+</document>
